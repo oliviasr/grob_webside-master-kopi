@@ -1,0 +1,315 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@font-face {
+  font-family: druk_bold_regular;
+  src: url(druk_bold_regular.woff2);
+}
+h1 {
+  font-family: druk_bold_regular;
+  font-stretch: normal;
+}
+p,
+a {
+  font-family: "Titillium Web", sans-serif;
+}
+
+header {
+  display: grid;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+header video {
+  grid-area: 1/1;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+h1 {
+  text-align: center;
+  place-self: center;
+  grid-area: 1/1;
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: druk_bold_regular;
+  font-stretch: normal;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-family: druk_bold_regular;
+  font-stretch: normal;
+}
+
+/* main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 20px;
+} */
+
+#section1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 20px;
+  gap: 10px;
+  height: 1100px;
+}
+#section1 p {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 1rem;
+  line-height: 2rem;
+  max-height: fit-content;
+}
+
+#section_2for1 .section_wrapper {
+  background-color: rgb(231, 231, 231);
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+#section_2for1 .section_wrapper .col1 button {
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  background-color: rgb(231, 231, 231);
+  padding-top: 10px;
+}
+
+#section2 {
+  display: grid;
+  margin-top: 20px;
+}
+#section2 iframe {
+  height: 200px;
+  width: 350px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+#section3 .section_wrapper {
+  margin: 50px;
+}
+
+#formular .section_wrapper {
+  background-color: rgb(231, 231, 231);
+}
+
+#formular {
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  #formular .section_wrapper {
+    padding: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  #formular .col1 [type="text"],
+  select {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(82, 82, 82);
+    box-sizing: border-box;
+  }
+
+  #formular .col1 [type="text"],
+  select {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(82, 82, 82);
+    box-sizing: border-box;
+  }
+
+  #formular .col1 [type="email"],
+  select {
+    width: 50%;
+    padding: 12px 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(82, 82, 82);
+    box-sizing: border-box;
+  }
+
+  #formular div {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  #formular .col2 {
+    order: 2;
+    display: grid;
+    gap: 2rem;
+  }
+
+  #formular .form-felt {
+    width: 100%;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    box-sizing: border-box;
+    gap: 2rem;
+  }
+}
+
+.button {
+  background-color: #383e42;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #545d63;
+  color: rgb(255, 255, 255);
+}
+
+@media (min-width: 700px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  /*  main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 20px;
+  } */
+
+  #section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 20px;
+    gap: 40px;
+  }
+
+  #section1 p {
+    max-width: fit-content;
+    overflow: hidden;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    margin-top: 40px;
+    margin-right: 40px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #billede1 {
+    grid-column: 1;
+    grid-row: 1/4;
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 40px;
+    margin-top: 10px;
+  }
+
+  #section2 {
+    display: grid;
+    margin-top: 120px;
+    place-content: center;
+  }
+  #section2 iframe {
+    height: 920px;
+    width: 1400px;
+  }
+
+  #section3 .section_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  #section3 .section_wrapper .col1 {
+    padding-top: 50px;
+  }
+
+  #section_2for1 .section_wrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  #section_2for1 .section_wrapper .col1 {
+    padding-top: 50px;
+  }
+}
+
+footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 20px; /* Height of the footer */
+  background: white;
+  gap: 20px;
+}
+
+.se-mere,
+.kontakt-meg,
+.info {
+  padding: 25px;
+}
+
+.footer-logo {
+  margin-top: 25px;
+}
+
+footer img {
+  width: 40%;
+}
+
+footer a {
+  color: black;
+}
+
+.facebook,
+.instagram {
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+}
+
+@media (min-width: 750px) {
+  .footer_wrapper {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .fav-footer {
+    text-align: left;
+    width: 28%;
+  }
+}
