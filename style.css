@@ -62,7 +62,7 @@ h3 {
   margin-top: 20px;
 } */
 
-#section1 {
+/* #section1 {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -76,7 +76,7 @@ h3 {
   font-size: 1rem;
   line-height: 2rem;
   max-height: fit-content;
-}
+} */
 
 #section_2for1 .section_wrapper {
   background-color: rgb(231, 231, 231);
@@ -85,7 +85,11 @@ h3 {
 }
 
 #section_2for1 .section_wrapper .col1 button {
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+#section_2for1 .section_wrapper {
+  padding: 25px;
 }
 
 h2 {
@@ -107,7 +111,7 @@ h2 {
 }
 
 #section3 .section_wrapper {
-  margin: 50px;
+  padding: 25px;
 }
 
 #formular .section_wrapper {
@@ -201,7 +205,7 @@ h2 {
     margin-top: 20px;
   } */
 
-  #section1 {
+  /* #section1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -218,7 +222,7 @@ h2 {
     margin-right: 40px;
     grid-column: 2;
     grid-row: 1;
-  }
+  } */
 
   #billede1 {
     grid-column: 1;
